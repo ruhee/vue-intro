@@ -1,0 +1,7 @@
+.reveal ul li {
+  margin: 4px 0;
+}
+
+.reveal span.code {
+  font-family: 'Courier New', Courier, monospace;
+}

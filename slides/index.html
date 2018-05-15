@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Intro to Vue</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/moon.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -25,9 +26,143 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Vue.js</h1>
-					<h2>Interesting title here</h2>
+					<h1>Vue.js: it's neat</h1>
+					<h2>A lunch & learn For TWG by Ruhee</h2>
 				</section>
+				<section>
+					<h1>What is Vue?</h1>
+					<ul>
+						<li>Yet another JavaScript framework!</li>
+						<li>Designed to be incrementally adoptable</li>
+						<li>Can be just your view (Vue!) layer, or a powerful single-page app with build process</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Why is it awesome?</h1>
+					<ul>
+						<li>Companion libraries developed in tandem</li>
+						<li>The docs are great</li>
+						<li>Declarative vs imperative</li>
+					</ul>
+				</section>
+
+				<!-- Directives -->
+				<section>
+					<h2>Directives</h2>
+					<ul>
+						<li>HTML attributes with functionality offered by Vue</li>
+						<li><span class="code">v-model</span>: Two-way data binding</li>
+						<li><span class="code">v-if, v-show</span>: Conditional display</li>
+						<li><span class="code">v-for</span>: Easy looping through lists</li>
+						<li><span class="code">v-bind</span> or shorthand :</li>
+						<li><span class="code">v-on</span> or shorthand @</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/shorthand.png" />
+				</section>
+				<section>
+					<img src="img/v-if.png" />
+				</section>
+				<section>
+					<img src="img/v-for.png" style="height: 640px" />
+				</section>
+
+				<!-- Components -->
+				<section>
+					<h1>Components</h1>
+				</section>
+				<section>
+					<img src="img/singlefile.png" style="height: 700px" />
+				</section>
+				<section>
+					<h2>Slots</h2>
+					<img src="img/simple-slot.png" />
+				</section>
+				<section>
+					<h2>Named slots</h2>
+					<img src="img/named-slot.png" style="height: 550px" />
+				</section>
+				<section>
+					<h2>Named slots</h2>
+					<img src="img/named-slot-2.png" style="height: 500px" />
+				</section>
+
+				<!-- Props and methods -->
+				<section>
+					<h2>Props (simple)</h2>
+					<img src="img/simple-props.png" />
+				</section>
+
+				<section>
+					<h2>Props (fancy)</h2>
+					<img src="img/fancy-props.png" />
+				</section>
+
+				<section>
+					<h2>Methods</h2>
+					<img src="img/method.png" style="height: 500px" />
+				</section>
+
+				<section>
+					<h2>Event emitting</h2>
+					<img src="img/emit.png" style="height: 560px" />
+				</section>
+
+				<section>
+					<h2>Computed properties & watchers</h2>
+					<a href="https://vuejs.org/v2/guide/computed.html" target="_blank">(go to the docs now)</a>
+				</section>
+
+				<!-- Vuex -->
+				<section>
+					<h1>Vuex</h1>
+					<ul>
+						<li>Centralized store for data, logic, etc.</li>
+						<li>Flux architecture in Vue</li>
+						<li>Integrated seamlessly into Vue applications (store always accessible)</li>
+						<li>You can use Redux too!</li>
+						<li>(But, like, don't)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Mutations</h2>
+					<ul>
+						<li>Synchronous</li>
+						<li>The only way to modify (mutate) state</li>
+						<li>These are your reducer functions</li>
+					</ul>
+				</section>	
+
+				<section>
+						<h2>Mutations</h2>
+						<img src="img/mutation.png" />
+					</section>
+
+				<section>
+					<h2>Actions</h2>
+					<ul>
+						<li>Asynchronous and most familiar from Redux</li>
+						<li>Contain business logic</li>
+						<li>Commit mutations from inside them</li>
+						<li>Good for when you need to do things in a certain order or hit a server</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Actions</h2>
+					<img src="img/action.png" height="500px" />
+				</section>
+
+				<section>
+					<h1>Other stuff</h1>
+					<ul>
+						<li>The Chrome Vue devtools are great</li>
+						<li>Stuff I didn't talk about: Vue CLI, style guide, starter apps (<span class="code">vue-webpack</span> and more)</li>
+					</ul>
+				</section>
+
 			</div>
 		</div>
 
